@@ -1,4 +1,8 @@
 package com.joel.exception;
 
-public class LoanNotFoundException {
+public class LoanNotFoundException extends RuntimeException {
+
+    public LoanNotFoundException(String message) {
+        super(message);
+    }
 }

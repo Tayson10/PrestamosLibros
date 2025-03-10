@@ -1,4 +1,8 @@
 package com.joel.exception;
 
-public class DuplicateStudentException {
+public class DuplicateStudentException extends RuntimeException {
+
+    public DuplicateStudentException(String message) {
+        super(message);
+    }
 }
